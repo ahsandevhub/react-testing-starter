@@ -6,7 +6,7 @@ const AuthProvider = ({ children }: PropsWithChildren) => {
   const navigate = useNavigate();
 
   const domain = import.meta.env.VITE_AUTH0_DOMAIN;
-  const clientId = import.meta.env.VITE_AUTH0_CLIENTID;
+  const clientId = import.meta.env.VITE_AUTH0_CLIENT_ID;
 
   if (!domain || !clientId) {
     throw new Error(
